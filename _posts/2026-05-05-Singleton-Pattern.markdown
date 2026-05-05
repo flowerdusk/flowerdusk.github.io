@@ -40,6 +40,7 @@ public class Employee {
 ```
 ---
 ## 类比对应关系
+
 | 公司场景 | Java代码 | 
 |:----:|:---:|
 |  打印机的设计图纸 | 	Singleton 类 | 
