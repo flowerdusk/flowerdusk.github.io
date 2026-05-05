@@ -41,10 +41,9 @@ public class Employee {
 ---
 ## 类比对应关系
 
-| 公司场景 | Java代码 | 
-|:----:|:---:|
-|  打印机的设计图纸 | 	Singleton 类 | 
-| 唯一的那台打印机 | instance 实例 | 
-| 3楼打印室（固定地点）| getInstance() 方法 |
-| 所有员工 | 所有调用方 |
-| 员工去打印室取打印机 | Singleton.getInstance() |
+| 公司场景 | Java代码 |
+|---------|---------|
+| 打印机的设计图纸 | Singleton类 |
+| 唯一的那台打印机 | instance实例 |
+| 3楼打印室 | getInstance()方法 |
+| 所有员工 | Singleton.getInstance() |
