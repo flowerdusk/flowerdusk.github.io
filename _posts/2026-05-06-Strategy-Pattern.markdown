@@ -16,7 +16,6 @@ class Alipay implements PayStrategy {
         System.out.println("使用支付宝支付：" + amount + "元");
     }
 }
-
 class WechatPay implements PayStrategy {
     public void pay(int amount) {
         System.out.println("使用微信支付：" + amount + "元");
