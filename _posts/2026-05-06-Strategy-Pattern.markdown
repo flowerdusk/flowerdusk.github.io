@@ -53,9 +53,9 @@ public class Main {
 ---
 详细介绍上下文类：
 
-具体来说，PayStrategy 是一个接口，而 WechatPay 和 Alipay 都实现了这个接口。因此是一个”关系：WechatPay 对象可以被视为 PayStrategy 类型的一种。在面向对象编程中，子类对象可以赋值给父类类型（或接口类型）的变量。
+* 具体来说，PayStrategy 是一个接口，而 WechatPay 和 Alipay 都实现了这个接口。因此是一个”关系：WechatPay 对象可以被视为 PayStrategy 类型的一种。在面向对象编程中，子类对象可以赋值给父类类型（或接口类型）的变量。
 
-简单类比：
+* 简单类比：
 PayStrategy 就像一个“支付许可证”，WechatPay 和 Alipay 是持有该许可证的具体设备。当你把一张微信支付设备贴到“支付接口”上时，系统只管通过标准接口读取，实际扣款的是微信设备。
 
 **所以这行代码能成立的根本原因是：**
