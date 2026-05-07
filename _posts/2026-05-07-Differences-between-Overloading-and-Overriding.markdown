@@ -40,6 +40,7 @@ public class Calculator {
   - 访问权限不能更低（可以更高）
   - 不能抛出更宽泛的异常
   - 属于运行时多态（动态绑定）
+
 ```java
 public class Animal {
     public void sound() {
@@ -50,7 +51,6 @@ public class Animal {
         System.out.println("动物吃东西");
     }
 }
-
 public class Dog extends Animal {
     @Override  // 推荐使用注解
     public void sound() {
@@ -63,7 +63,7 @@ public class Dog extends Animal {
     }
 }
 ```
-
+---
 ## 常见误区
 - 只有返回类型不同不是重载（编译错误）
 - 静态方法不能被重写（但可以重新声明）
