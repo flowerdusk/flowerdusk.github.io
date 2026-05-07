@@ -5,7 +5,7 @@
   - 发生在同一个类中
   - 与返回类型、访问修饰符无关
   - 属于编译时多态（静态绑定）
-```Java
+```java
 public class Calculator {
     // 参数个数不同
     public int add(int a, int b) {
@@ -40,7 +40,7 @@ public class Calculator {
   - 访问权限不能更低（可以更高）
   - 不能抛出更宽泛的异常
   - 属于运行时多态（动态绑定）
-```Java
+```java
 public class Animal {
     public void sound() {
         System.out.println("动物发出声音");
