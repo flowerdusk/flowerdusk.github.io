@@ -1,3 +1,9 @@
+---
+layout: post
+title: Singleton Pattren
+date: 2026-05-05
+---
+
 # 单例模式
 
 通俗的解释就是：公司全部的人共用一个打印机。

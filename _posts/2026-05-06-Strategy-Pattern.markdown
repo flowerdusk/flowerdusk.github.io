@@ -1,3 +1,9 @@
+---
+layout: post
+title: Strategy Pattern
+date: 2026-05-06
+---
+
 # Strategy Pattern
 
 策略模式的原理是：定义一系列算法接口，将每个算法封装到独立类中，并让它们可以相互替换，从而使算法变化独立于使用算法的客户端。

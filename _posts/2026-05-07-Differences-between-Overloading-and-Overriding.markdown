@@ -1,3 +1,9 @@
+---
+layout: post
+title: Differences between Overloading and Overriding
+date: 2026-05-07
+---
+
 # Differences between Overloading and Overriding
 ## 1.  重载（Overloading）
 * 定义：同一个类中，多个方法方法名相同，但参数列表不同（参数个数、类型、顺序不同）。
