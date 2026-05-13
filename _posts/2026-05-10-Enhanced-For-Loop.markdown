@@ -7,6 +7,8 @@ date: 2026-05-10
 # Enhanced For Loop
 
 ## 1.  基本语法
+
+{% raw %}
 ```java
 // 语法格式
 for (元素类型 变量名 : 数组或Iterable对象) {
@@ -21,6 +23,8 @@ for (int num : numbers) {
 
 ## 2.  工作原理
 * 遍历数组时：
+
+{% raw %}
 ```java
 // 源代码
 int[] arr = {1, 2, 3};
@@ -35,6 +39,8 @@ for (int i = 0; i < arr.length; i++) {
 }
 ```
 * 遍历Iterable对象（如List、Set）时：
+
+{% raw %}
 ```java
 // 源代码
 List<String> list = Arrays.asList("A", "B", "C");
@@ -51,6 +57,8 @@ for (Iterator<String> iterator = list.iterator(); iterator.hasNext();) {
 
 ## 3. 使用示例
 * 遍历数组
+
+{% raw %}
 ```java
 // 一维数组
 int[] arr = {1, 2, 3, 4, 5};
@@ -67,6 +75,8 @@ for (int[] row : matrix) {
 ```
 
 * 遍历Collection
+
+{% raw %}
 ```java
 // List
 List<String> names = new ArrayList<>();
@@ -93,6 +103,8 @@ for (Person p : persons) {
 
 ## 5. 限制和注意事项
 **不能删除元素**
+
+{% raw %}
 ```java
 List<String> list = new ArrayList<>(Arrays.asList("A", "B", "C"));
 // ❌ 错误：会抛出ConcurrentModificationException
@@ -118,6 +130,8 @@ for (int i = list.size() - 1; i >= 0; i--) {
 
 ## 6. 如何让自定义类支持增强for循环
 1. 代码分析
+
+{% raw %}
 ```java
 public class Sales implements Iterable<Order> {  // 实现Iterable接口
     private ArrayList<Order> orders;
@@ -134,6 +148,8 @@ public class Sales implements Iterable<Order> {  // 实现Iterable接口
 - 任何实现了Iterable接口的类，都可以使用增强for循环
 
 2. 为什么能使用增强for循环？
+
+{% raw %}
 ```java
 // 使用示例
 Sales sales = new Sales();
@@ -146,6 +162,8 @@ for (Order order : sales) {  // sales是Sales类型
 }
 ```
 编译过程（语法糖展开）：
+
+{% raw %}
 ```java
 // 源代码
 for (Order order : sales) {
