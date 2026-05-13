@@ -131,8 +131,8 @@ public class Sales implements Iterable<Order> {  // 实现Iterable接口
 }
 ```
 关键点：
-- Sales类实现了Iterable<Order>接口
-- 实现了iterator()方法，返回Iterator<Order>对象
+- Sales类实现了Iterable<>接口
+- 实现了iterator()方法，返回Iterator<>对象
 - 任何实现了Iterable接口的类，都可以使用增强for循环
 
 2. 为什么能使用增强for循环？
